@@ -26,7 +26,7 @@ function OrderHistory() {
       try {
         setLoading(true);
         const response = await axios.get(
-          "http://localhost:1000/api/v1/order/order-history",
+          "https://grocery-store-68wb.onrender.com/api/v1/order/order-history",
           {
             headers: {
               userId: localStorage.getItem("id") || "",

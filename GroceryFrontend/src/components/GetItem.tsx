@@ -37,7 +37,7 @@ const GetItem = () => {
     const fetchItem = async () => {
       try {
         const res = await axios.get<{ item: Item }>(
-          `http://localhost:1000/api/v1/item/get-item/${id}`
+          `https://grocery-store-68wb.onrender.com/api/v1/item/get-item/${id}`
         );
         setItem(res.data.item); // Assuming API returns a single "item" property
       } catch (err) {
@@ -63,7 +63,7 @@ const GetItem = () => {
 
 
     const response = await axios.delete(
-      "http://localhost:1000/api/v1/item/deleteItem",
+      "https://grocery-store-68wb.onrender.com/api/v1/item/deleteItem",
       { headers }
     );
     if (response.status === 200) {
@@ -87,7 +87,7 @@ const GetItem = () => {
       };
 
       const response = await axios.put(
-        "http://localhost:1000/api/v1/user/add-to-cart",
+        "https://grocery-store-68wb.onrender.com/api/v1/user/add-to-cart",
         body,
         { headers }
       );

@@ -47,7 +47,7 @@ function Categories() {
       setSelectedCategory(category);
 
       const response = await axios.get<{ items: Item[] }>(
-        'http://localhost:1000/api/v1/item/items',
+        'https://grocery-store-68wb.onrender.com/api/v1/item/items',
         {
           params: { category },
         }

@@ -80,7 +80,7 @@ const AddItem: React.FC = () => {
     
 
       const response = await axios.post(
-        "http://localhost:1000/api/v1/item/addItem",
+        "https://grocery-store-68wb.onrender.com/api/v1/item/addItem",
         validatedData, { headers} 
    
       );

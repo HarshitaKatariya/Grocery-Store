@@ -40,7 +40,7 @@ const AllOrders: React.FC = () => {
       }
 
       try {
-        const response = await axios.get("http://localhost:1000/api/v1/order/get-all-orders", {
+        const response = await axios.get("https://grocery-store-68wb.onrender.com/api/v1/order/get-all-orders", {
           headers: { Authorization: `Bearer ${token}` },
         });
 

@@ -20,7 +20,7 @@ function Products() {
     const fetchItems = async () => {
       try {
         const res = await axios.get<{ items: Item[] }>(
-          "http://localhost:1000/api/v1/item/get-all-items"
+          "https://grocery-store-68wb.onrender.com/api/v1/item/get-all-items"
         );
         setItems(res.data.items);
       } catch (err) {

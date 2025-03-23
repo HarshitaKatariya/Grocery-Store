@@ -33,7 +33,7 @@ function Cart() {
       try {
         setLoading(true); // Start loading
         const response = await axios.get(
-          "http://localhost:1000/api/v1/user/get-cart-items",
+          "https://grocery-store-68wb.onrender.com/api/v1/user/get-cart-items",
           { headers }
         );
         const cartData: CartItem[] = response.data.cartItems;
@@ -60,7 +60,7 @@ function Cart() {
   const handleRemove = async (cartItemId: string) => {
     try {
       const response = await axios.put(
-        "http://localhost:1000/api/v1/user/remove-from-cart",
+        "https://grocery-store-68wb.onrender.com/api/v1/user/remove-from-cart",
         null,
         { headers: { ...headers, cartItemId } }
       );
@@ -75,7 +75,7 @@ function Cart() {
   const handlePlaceOrder = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:1000/api/v1/order/place-order",
+        "https://grocery-store-68wb.onrender.com/api/v1/order/place-order",
         {},
         { headers }
         
