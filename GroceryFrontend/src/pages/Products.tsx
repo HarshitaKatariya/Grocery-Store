@@ -4,6 +4,7 @@ import Card from "../components/Card";
 import Spinner from "../components/Spinner";
 
 interface Item {
+  _id: string;
   imageUrl: string;
   name: string;
   price: number;

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import emptyCart from "../images/empty_cart.png";
 import Spinner from "../components/Spinner";
 interface CartItem {
@@ -18,7 +18,7 @@ interface CartItem {
 }
 
 function Cart() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [cart, setCart] = useState<CartItem[]>([]);
   const [total, setTotal] = useState<number>(0);
   const [loading, setLoading] = useState<boolean>(true); // Add loading state
@@ -59,7 +59,7 @@ function Cart() {
 
   const handleRemove = async (cartItemId: string) => {
     try {
-      const response = await axios.put(
+      await axios.put(
         "https://grocery-store-68wb.onrender.com/api/v1/user/remove-from-cart",
         null,
         { headers: { ...headers, cartItemId } }

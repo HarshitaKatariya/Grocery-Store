@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -10,7 +10,7 @@ const NavBtn = () => {
   // Access the `isLoggedIn` value from Redux store
   const isLoggedIn = useSelector((state:any) => state.auth.isLoggedIn);
   const role = useSelector((state:any) => state.auth.role);
-  const toggleSearch = () => {
+  () => {
     setIsSearchOpen(!isSearchOpen);
   };
  

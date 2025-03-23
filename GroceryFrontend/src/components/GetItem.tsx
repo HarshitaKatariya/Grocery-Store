@@ -7,7 +7,7 @@ import { faInr } from "@fortawesome/free-solid-svg-icons";
 import { FaShoppingCart } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { MdDelete } from "react-icons/md";
-import { FaRegEdit } from "react-icons/fa";
+// import { FaRegEdit } from "react-icons/fa";
 
 interface Quantity {
   value: number;
