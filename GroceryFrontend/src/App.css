@@ -1,0 +1,22 @@
+/* Ensure the body and html take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensure it fills the full viewport height */
+}
+
+.content {
+  flex-grow: 1; /* Let this section take up remaining space */
+}
+
+footer {
+  background-color: #28a745; /* Or your desired footer color */
+  padding: 20px;
+  text-align: center;
+  margin-top: auto; /* Ensure it stays at the bottom of the page */
+}
